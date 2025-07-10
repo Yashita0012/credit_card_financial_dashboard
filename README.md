@@ -30,7 +30,7 @@ Dashboard 1 Name: **cc_transaction_report**
 1. Open **Transform Data** to clean and shape the dataset.
 2.Create new columns using DAX formulas under **Table Tools**.
 ##### DAX Queries: 
-// Age Grouping (New Column)
+``` Age Grouping (New Column)
 AgeGroup = SWITCH(
     TRUE(),
     'public cust_detail'[customer_age] < 30, "20-30",
@@ -40,5 +40,5 @@ AgeGroup = SWITCH(
     'public cust_detail'[customer_age] >= 60, "60+",
     "unknown"
 )
-//
+```
 
