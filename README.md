@@ -91,36 +91,38 @@ WOW_REVENUE = DIVIDE(
 
 ## Step 4: Dashboard Design & Visualization in Power BI
 #####  Dashboard Title:
+
 Credit Card Transaction Report
+
 ##### Charts:
-**Chart 1**: Stacked Line Chart
+1.**Chart 1**Stacked Line Chart
 X-Axis: Quarter
 Y-Axis: Revenue
-**Chart 2**: Stacked Bar Chart
+2.**Chart 2** Stacked Bar Chart
 X-Axis: Expenditure Type
 Y-Axis: Revenue
-**Chart 3**: Stacked Bar Chart
+3.**Chart 3** Stacked Bar Chart
 X-Axis: Education Level
 Y-Axis: Revenue
-**Chart 4**: Stacked Bar Chart
+4.**Chart 4** Stacked Bar Chart
 X-Axis: Job Type
 Y-Axis: Revenue
-**Chart 5**: Stacked Bar Chart
+5.**Chart 5**: Stacked Bar Chart
 X-Axis: Card Chip
 Y-Axis: Revenue
-**Chart 6**: Table
+6.**Chart 6**: Table
 Columns:
 Card Category
 Sum of Revenue
 Total Transaction Amount
 Interest Earned
-**KPI Cards:**
+7.**KPI Cards:**
 Card 1: Revenue (Title: Revenue)
 Card 2: Total Interest Earned (Title: Total Interest)
 Card 3: Total Transaction Amount (Title: Transaction Amount)
-**Slicer:**
+8.**Slicer:**
 Based on Week Start Date.
-**Tree Map Charts**:
+9.**Tree Map Charts**:
 Tree Map 1: Quarter vs Client Number.
 Tree Map 2: Gender Category (Average of Client Number).
 Tree Map 3: Card Category (Average of Client Number).
