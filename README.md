@@ -81,4 +81,8 @@ Previous_week_Reveneue = CALCULATE(
 WOW_REVENUE = DIVIDE(
     ('public cc_detail'[Current_week_Reveneue] - 'public cc_detail'[Previous_week_Reveneue]),
     'public cc_detail'[Previous_week_Reveneue]
-)```
+) ```
+
+
+
+#####Step 4: Dashboard Design & Visualization in Power BI
