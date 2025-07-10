@@ -41,7 +41,7 @@ AgeGroup = SWITCH(
     "unknown"
 )
 ```
-#####Income Grouping (New Column)
+Income Grouping (New Column)
 ```IncomeGroup = SWITCH(
     TRUE(),
     'public cust_detail'[income] < 35000, "Low",
@@ -49,13 +49,13 @@ AgeGroup = SWITCH(
     'public cust_detail'[income] >= 70000, "High",
     "unknown"
 )```
-
-#####Week Number ( New Column)
+ Week Number (New Column)
 ```week_num2 = WEEKNUM('public cc_detail'[week_start_date])```
-#####Revenue Calculation (New Column)
+Revenue Calculation (New Column)
 ```Revenue = 'public cc_detail'[annual_fees] + 
           'public cc_detail'[total_trans_amt] + 
           'public cc_detail'[interest_earned]```
+
 
 
 
