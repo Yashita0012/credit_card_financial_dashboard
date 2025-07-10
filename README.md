@@ -41,22 +41,44 @@ AgeGroup = SWITCH(
     "unknown"
 )
 ```
-Income Grouping (New Column)
-```IncomeGroup = SWITCH(
+```Income Grouping (New Column)
+IncomeGroup = SWITCH(
     TRUE(),
     'public cust_detail'[income] < 35000, "Low",
     'public cust_detail'[income] >= 35000 && 'public cust_detail'[income] < 70000, "Med",
     'public cust_detail'[income] >= 70000, "High",
     "unknown"
 )```
- Week Number (New Column)
-```week_num2 = WEEKNUM('public cc_detail'[week_start_date])```
+```Week Number (New Column)
+week_num2 = WEEKNUM('public cc_detail'[week_start_date])```
 Revenue Calculation (New Column)
 ```Revenue = 'public cc_detail'[annual_fees] + 
           'public cc_detail'[total_trans_amt] + 
           'public cc_detail'[interest_earned]```
 
-
-
-
-
+``` Revenue Calculation (New Column)
+Revenue = 'public cc_detail'[annual_fees] + 
+          'public cc_detail'[total_trans_amt] + 
+          'public cc_detail'[interest_earned]
+```
+```Current Week Revenue (New Measure)
+Current_week_Reveneue = CALCULATE(
+    SUM('public cc_detail'[Revenue]),
+    FILTER(
+        ALL('public cc_detail'),
+        'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2])
+    )
+)```
+```Previous Week Revenue (New Measure)
+Previous_week_Reveneue = CALCULATE(
+    SUM('public cc_detail'[Revenue]),
+    FILTER(
+        ALL('public cc_detail'),
+        'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2]) - 1
+    )
+)```
+``` Week-over-Week Revenue Change (New Measure)
+WOW_REVENUE = DIVIDE(
+    ('public cc_detail'[Current_week_Reveneue] - 'public cc_detail'[Previous_week_Reveneue]),
+    'public cc_detail'[Previous_week_Reveneue]
+)```
