@@ -15,7 +15,7 @@ The objective of this project is to **develop a comprehensive Credit Card Weekly
 2. Create a new PostgreSQL database:
 ```sql
 CREATE DATABASE credit_Card_Db;
-'''
+```
 ###**Step 2: Connect PostgreSQL Database to Power BI**
 1.Open Power BI Desktop.
 2.Click Get Data → Choose PostgreSQL.
