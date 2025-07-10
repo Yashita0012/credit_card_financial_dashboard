@@ -16,7 +16,7 @@ The objective of this project is to **develop a comprehensive Credit Card Weekly
 ```sql
 CREATE DATABASE credit_Card_Db;
 ```
-###**Step 2: Connect PostgreSQL Database to Power BI**
+###Step 2: Connect PostgreSQL Database to Power BI
 1.Open Power BI Desktop.
 2.Click Get Data → Choose PostgreSQL.
 3.Provide required database connection details:
@@ -28,7 +28,7 @@ Database: credit_Card_Db
 1.Data Transformation:
 2.Open Transform Data to clean and shape the dataset.
 3.Create new columns using DAX formulas under Table Tools.
-'''AgeGroup = SWITCH(
+//AgeGroup = SWITCH(
     TRUE(),
     'public cust_detail'[customer_age] < 30, "20-30",
     'public cust_detail'[customer_age] >= 30 && 'public cust_detail'[customer_age] < 40, "30-40",
@@ -36,4 +36,4 @@ Database: credit_Card_Db
     'public cust_detail'[customer_age] >= 50 && 'public cust_detail'[customer_age] < 60, "50-60",
     'public cust_detail'[customer_age] >= 60, "60+",
     "unknown"
-)'''
+)//
