@@ -95,33 +95,43 @@ WOW_REVENUE = DIVIDE(
 Credit Card Transaction Report
 
 ##### Charts:
-1.**Chart 1**Stacked Line Chart
+1.**Chart 1**Stacked Line Chart.
 X-Axis: Quarter
 Y-Axis: Revenue
+
+
 2.**Chart 2** Stacked Bar Chart
 X-Axis: Expenditure Type
 Y-Axis: Revenue
+
+
 3.**Chart 3** Stacked Bar Chart
 X-Axis: Education Level
 Y-Axis: Revenue
+
 4.**Chart 4** Stacked Bar Chart
 X-Axis: Job Type
 Y-Axis: Revenue
+
 5.**Chart 5**: Stacked Bar Chart
 X-Axis: Card Chip
 Y-Axis: Revenue
+
 6.**Chart 6**: Table
 Columns:
 Card Category
 Sum of Revenue
 Total Transaction Amount
 Interest Earned
+
 7.**KPI Cards:**
 Card 1: Revenue (Title: Revenue)
 Card 2: Total Interest Earned (Title: Total Interest)
 Card 3: Total Transaction Amount (Title: Transaction Amount)
+
 8.**Slicer:**
 Based on Week Start Date.
+
 9.**Tree Map Charts**:
 Tree Map 1: Quarter vs Client Number.
 Tree Map 2: Gender Category (Average of Client Number).
